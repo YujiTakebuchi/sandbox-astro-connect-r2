@@ -1,5 +1,13 @@
 ---
-
+const { env: astroEnv } = Astro.locals.runtime;
+console.log(astroEnv);
+console.log(astroEnv.R2_BUCKET_DEV);
+// const { results } = await astroEnv.R2_BUCKET_DEV
+// const { results } = await astroEnv.OGP.prepare(
+// 		  "SELECT * FROM ogp WHERE parameter == ? AND isBanned == 0;"
+// 		)
+// 			.bind(userId)
+// 		  .all();
 ---
 
 <html lang="en">
